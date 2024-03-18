@@ -2,7 +2,7 @@ const request = require("request");
 require("dotenv").config();
 
 const forecast = (lat, lon, callback) => {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.WEATHER_KEY}&units=f`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=ba04f9a250fc1814524bbc10b67e8d2d&units=f`;
 
   request({ url, json: true }, (error, { body }) => {
     if (error) callback("unable to connect the weather api", undefined);
