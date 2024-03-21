@@ -5,7 +5,8 @@
   "main": "db.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +22,8 @@
     "nodemailer": "^6.9.12",
     "sharp": "^0.29.0",
     "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
